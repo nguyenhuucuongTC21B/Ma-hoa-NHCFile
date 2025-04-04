@@ -25,6 +25,9 @@
     "pg-hstore": "^2.3.4",
     "rimraf": "^6.0.1",
     "sequelize": "^6.37.7",
-    "winston": "^3.17.0"
+    "winston": "^3.17.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
   }
 }
