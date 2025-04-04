@@ -3,6 +3,8 @@
   "version": "1.0.2",
   "main": "index.js",
   "scripts": {
+    "start": "node server/app.js",
+    "build": "your-build-command-here"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
