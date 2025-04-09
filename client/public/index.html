@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Encryption System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Data Encryption System</h1>
+      <div id="auth-section">
+        <button id="login-btn">Login</button>
+        <button id="register-btn">Register</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="key-management">
+        <h2>Key Management</h2>
+        <button id="generate-keys-btn">Generate New Key Pair</button>
+        <div id="public-key-display"></div>
+      </div>
+
+      <div id="file-encryption">
+        <h2>File Encryption</h2>
+        <input type="file" id="file-input" accept=".txt,.csv,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.pdf,.odt,.ods,.bmp,.jpg,.jpeg,.png,.gif">
+        <button id="encrypt-btn">Encrypt File</button>
+        <button id="decrypt-btn">Decrypt File</button>
+        <div id="file-info"></div>
+        <a id="download-link" style="display:none;">Download Processed File</a>
+      </div>
+
+      <div id="status-log"></div>
+    </main>
+  </div>
+
+  <!-- Modal for authentication -->
+  <div id="auth-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title">Login</h2>
+      <form id="auth-form">
+        <div id="register-fields" style="display:none;">
+          <input type="text" id="email" placeholder="Email" required>
+        </div>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <div id="master-password-field" style="display:none;">
+          <input type="password" id="master-password" placeholder="Master Password (for key encryption)">
+        </div>
+        <button type="submit" id="auth-submit-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
